@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+
+body {
+
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 1px);
+  justify-content: center;
+  align-items: center;
+  
+  
+  position: relative;
+
+}
+
+.main {
+  
+  background-color: hsl(216, 50%, 16%);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 15px 15px 30px hsl(215, 61%, 6%) ;
+  
+
+}
+
+.main h1{
+  color: white;
+  cursor: pointer;
+}
+
+.main h1:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+.main p{
+  color: hsl(215, 51%, 70%);
+  font-size: 15px;
+  text-align: left;
+  word-wrap: break-word;
+  width: 500px;
+}
+
+.main .nft-img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+
+
+.main .overlay {
+
+  background-color: hsl(178, 100%, 50%,60%);
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+  height: 400px;
+  top: 30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  
+}
+
+.main .overlay:hover
+{
+  opacity: 1;
+  
+}
+.avatar{
+  
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.main-section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom-width: 2px;
+  border-bottom-color: hsl(214, 17%, 50%);
+  border-bottom-style: solid;
+  
+}
+
+.main-section-1 .icon-eth{
+
+  width: 20px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.main-section-1 .clock {
+  margin-right: 10px;
+  width: 25px;
+}
+.main-section-1 .eth {
+  flex: 1;
+  color: hsl(178, 100%, 50%);
+}
+.main-section-1 h3{
+  color: hsl(178, 100%, 50%);
+}
+
+.main-section-2 {
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  
+}
+.main-section-2 .avatar {
+  margin-right: 10px;
+}
+
+.main-section-2 p .start {
+  color: gray;
+}
+
+.main-section-2 p .name:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (min-width: 500px){
+  .main {
+    width: 400px;
+  }
+}
+
+@media (min-height: 750px){
+  .main {
+    height: 300px;
+  }
+}
+
+
+
+.attribution { font-size: 15px; text-align: center; }
+.attribution  { color: white }
